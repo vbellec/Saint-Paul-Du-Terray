@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link href="css\styly.css" rel="stylesheet" />
+	<link href="..\css\styly.css" rel="stylesheet" />
 	<title>SAINT PAUL DU TERRAY</title>
 </head>
 
