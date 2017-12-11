@@ -1,0 +1,13 @@
+{
+    "name": "16bellecv/saint-paul-du-terray",
+    "description": "TP SAINT PAUL DU TERRAY",
+    "require": {
+        "silex/silex": "1.3.x-dev"
+    },
+    "authors": [
+        {
+            "name": "Vincent Bellec",
+            "email": "vincent.bellec29280@gmail.com"
+        }
+    ]
+}
