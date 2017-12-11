@@ -1,8 +1,13 @@
 <?php
-// connection à la base de données
+// connection ï¿½ la base de donnï¿½es
 
-$bdd = new PDO('mysql:host=localhost;dbname=bdstpaul;charset=utf8', 'root');
 
-$sejours = $bdd->query('select * from sejour order by sejno');
-			
+            
+    function sejour() {
+        $bdd = new PDO('mysql:host=localhost;dbname=bdstpaul;charset=utf8', 'root');
+        
+        $sejours = $bdd->query('select * from sejour order by sejno');
+        
+        return $sejours;
+    }
 ?>

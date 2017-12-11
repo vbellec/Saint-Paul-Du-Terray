@@ -1,5 +1,6 @@
 <?php
-require 'model.php';
-require 'vue.php';
+require('model.php');
+$sejours = sejour();
+require('vue.php');
 
 ?>

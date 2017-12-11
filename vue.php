@@ -1,13 +1,10 @@
-<?php
-require 'model.php';
-?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta charset="utf-8" />
-	<link href="css/styly.css" rel="stylesheet" />
+	<link href="css\styly.css" rel="stylesheet" />
 	<title>SAINT PAUL DU TERRAY</title>
 </head>
 
@@ -53,8 +50,7 @@ require 'model.php';
 			<h2>Liste des séjours prévus </h2>
 			<fieldset>
 			<?php
-		
-			$sejours = $bdd->query('select * from sejour order by sejno');
+	
 			foreach ($sejours as $sejour): ?>
 				<sejour>
 					<h2><p><?php echo $sejour['SEJINTITULE'] ?></p></h2>
