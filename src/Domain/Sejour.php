@@ -2,7 +2,9 @@
 
 namespace stpaul\Domain;
 
-
+/**
+ * Undocumented class
+ */
 class Sejour {
     private $SEJNO;
     private $SEJINTITULE;
@@ -13,7 +15,12 @@ class Sejour {
     public function getSEJNO() {
         return $this->SEJNO;
     }
-
+/**
+ * function setSEJNO
+ *
+ * @param int $SEJNO
+ * @return Sejour
+ */
     public function setSEJNO($val) {
         $this->SEJNO = $val;
         return $this;
@@ -23,6 +30,12 @@ class Sejour {
         return $this->SEJINTITULE;
     }
 
+    /**
+ * function setSEJINTITULE
+ *
+ * @param string $SEJINTITULE
+ * @return Sejour
+ */
     public function setSEJINTITULE($val) {
         $this->SEJINTITULE = $val;
         return $this;
@@ -32,6 +45,13 @@ class Sejour {
         return $this->SEJMONTANTMBI;
     }
 
+    
+    /**
+ * function setSEJMONTANTMBI
+ *
+ * @param float $SEJMONTANTMBI
+ * @return Sejour
+ */
     public function setSEJMONTANTMBI($val) {
         $this->SEJMONTANTMBI = $val;
         return $this;
@@ -41,6 +61,12 @@ class Sejour {
         return $this->SEJDTEDEB;
     }
 
+   /**
+ * function setSEJDTEDEB
+ *
+ * @param string $SEJDTEDEB
+ * @return Sejour
+ */    
     public function setSEJDTEDEB($val) {
         $this->SEJDTEDEB = $val;
         return $this;
@@ -50,6 +76,13 @@ class Sejour {
         return $this->SEJDUREE;
     }
 
+   
+   /**
+ * function setSEJDUREE
+ *
+ * @param int $SEJDUREE
+ * @return Sejour
+ */    
     public function setSEJDUREE($val) {
         $this->SEJDUREE = $val;
         return $this;

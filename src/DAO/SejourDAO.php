@@ -23,9 +23,9 @@ class SejourDAO
     }
 
     /**
-     * Return a list of all articles, sorted by date (most recent first).
+     * Return a list of all Sejour, sorted by date (most recent first).
      *
-     * @return array A list of all articles.
+     * @return array A list of all Sejour.
      */
     public function findAll() {
         $sql = "select * from sejour order by sejno";
@@ -40,10 +40,10 @@ class SejourDAO
     }
 
         /**
-     * Creates an Article object based on a DB row.
+     * Creates an Sejour object based on a DB row.
      *
-     * @param array $row The DB row containing Article data.
-     * @return \MicroCMS\Domain\Article
+     * @param array $row The DB row containing Sejour data.
+     * @return \stpaul\Domain\Sejour
      */
     private function buildSejour(array $row) {
         $sejour = new Sejour();
