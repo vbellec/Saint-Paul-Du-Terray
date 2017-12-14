@@ -1,2 +1,2 @@
-# Saint-Paul-Du-Terray
-Tp charles de foucauld
+# saint-paul-du-terray
+Exercise BTS-SIO - Charles de Foucauld

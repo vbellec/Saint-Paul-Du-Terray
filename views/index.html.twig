@@ -1,10 +1,9 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta charset="utf-8" />
-	<link href="css\styly.css" rel="stylesheet" />
+	<link href="css/styly.css" rel="stylesheet" />
 	<title>SAINT PAUL DU TERRAY</title>
 </head>
 
@@ -43,22 +42,18 @@
 				<li>Réduction de 40% pour famille de 3 enfants ou plus</li>
 			</ul>
 		</left>
-
 	<noscreen/>
-
 		<right class="right">
 			<h2>Liste des séjours prévus </h2>
 			<fieldset>
-			<?php
-	
-			foreach ($sejours as $sejour): ?>
-				<sejour>
-					<h2><p><?php echo $sejour['SEJINTITULE'] ?></p></h2>
-					<?php echo $sejour['SEJMONTANTMBI'].'€' ?><BR/>
-					<?php echo 'A partir du '.$sejour['SEJDTEDEB'] ?>
-					<?php echo $sejour['SEJDUREE'].' nuits' ?>
-				</sejour>
-			<?php endforeach ?>
+			{% for sejour in sejours %}
+			<sejour>
+				<h2><p>{{sejour.SEJINTITULE}}</p></h2>
+				{{sejour.SEJMONTANTMBI}} € <br />
+				A partir du {{sejour.SEJDTEDEB}}
+				{{sejour.SEJDUREE}} nuits
+			</sejour>
+			{% endfor %}
 			</fieldset>
 		</right>
 </main>
